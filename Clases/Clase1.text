@@ -46,4 +46,6 @@ GitBash
 git add . (Para agregar todo)
 git status
 git commit -m""
-git push
+git push 
+
+ll
