@@ -1,0 +1,41 @@
+Frontend -> HTML5 (HTML), CSS3 (CSS), JavaScript (JS)
+Librerias -> React, 
+Framework es un conjunto de librerias -> Angular
+
+Backend -> Infraestructura y Datos
+Infraestructura -> Nube
+Datos -> Bases de datos(BD), API
+Lenguajes -> Python (PY), Java, Node(Js)
+
+Fullstack -> 
+MERN -> Mongo, Express, React, Node
+LAMP -> Linux, Apache, MySql, (PHP, Perl, Python)
+
+Algoritmos -> Serie de pasos ordenados -> (Secuencial, Claro y preciso, Finito) -> Piensa en el Usuario
+
+Links
+
+Editor de codigo en linea -> Replit, IDX
+Diagramas de flujo -> Draw.io 
+Editor de codigo -> VS Code
+Terminal -> GitBash
+GitHub, configurar llaves SSH
+
+HTML
+
+<h1>Done</h1> para parrafos
+---------------------------------------------------------------
+Marzo 12
+
+HTML + CSS
+
+input - boton (Calcular)
+La flor es ""
+
+Traer elementos al JS
+Capturar el valor de entrada
+Al dar clic ejecutar una funcion
+Crear una funcion que dependiendo la entrada me da una flor
+Crear un elemento con el texto de la salida de la funcion y agregarlo al div
+
+x%3 y 5 margarita, 6 y 7 rosa, si se cumplen ambas es violeta

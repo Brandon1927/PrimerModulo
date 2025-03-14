@@ -1,0 +1,79 @@
+body {
+    background-color: #000000;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.menu-icon {
+    font-size: 30px;
+    cursor: pointer;
+    color: #FFD178;
+    padding: 20px;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1001;
+    transition: color 0.3s;
+}
+
+.menu-icon.active-icon {
+    color: #000000; /* Cambia el color del icono a negro cuando el menú esté activo */
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: #FFD178;
+    padding-top: 70px;
+    transition: left 0.3s;
+    z-index: 1000;
+}
+
+nav.active {
+    left: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    padding: 15px;
+}
+
+nav ul li a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+}
+
+.textos {
+    padding: 100px 20px 20px 20px;
+    text-align: center;
+    color: #FFD178;
+}
+
+.textos h2 {
+    margin-bottom: 20px;
+}
+
+.textos p {
+    max-width: 50%;
+    margin: 0 auto;
+    text-align: justify;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .textos p {
+        max-width: 90%;
+    }
+}

@@ -1,0 +1,32 @@
+body{
+    background-color: black;
+}
+
+h1{
+    color: white;
+    text-align: center;
+}
+
+ul{
+    color: white;
+}
+
+h4, h3{
+    color: white;
+}
+
+button{
+    border-radius: 12px;
+}
+
+div{
+    color: white;
+}
+
+input{
+    width: 250px;
+}
+
+p{
+    color: white;
+}

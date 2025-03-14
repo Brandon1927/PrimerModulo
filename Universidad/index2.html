@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¿Qué es la energía?</title>
+    <link rel="stylesheet" href="C:\Users\Brandon\Desktop\Bootcamp\Universidad\screen2.css" />
+</head>
+<body>
+
+    <div class="menu-icon" id="menuIcon">&#9776;</div>
+
+    <nav id="sidebar">
+        <ul>
+            <li><a href="index.html">¿Qué es la energía?</a></li>
+            <li><a href="index1.html">Definición</a></li>
+            <li><a href="index2.html">Tipos de energía</a></li>
+            <li><a href="index3.html">Ley</a></li>
+            <li><a href="index4.html">¿Por qué es importante?</a></li>
+            <li><a href="index5.html">Reflexión</a></li>
+        </ul>
+    </nav>
+
+    <div class="textos">
+        <h2>La confusión sobre la energía</h2>
+        <p>
+            La energía es un concepto que todos hemos escuchado, 
+            pero pocas veces nos detenemos a pensar qué significa realmente. 
+            Muchos creen que la energía es solo electricidad o el esfuerzo 
+            que sentimos al correr o levantar algo pesado. Sin embargo, 
+            la energía está presente en absolutamente todo lo que nos rodea. 
+            Está en el sol que calienta nuestro planeta, en el viento que mueve 
+            las hojas de los árboles y en cada latido de nuestro corazón.
+        </p>
+        <p>
+            La problemática surge cuando reducimos la energía a un solo aspecto 
+            y olvidamos su diversidad. Al no comprender bien qué es, corremos 
+            el riesgo de subestimarla o usarla de forma irresponsable. Por eso, 
+            es importante conocerla y entender cómo influye en nuestras vidas.
+        </p>
+        <video width="320" height="240" controls>
+            <source src="C:\Users\Brandon\Desktop\Bootcamp\Assets\videos\¿Qué es la energía_.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <script>
+        const menuIcon = document.getElementById('menuIcon');
+        const sidebar = document.getElementById('sidebar');
+
+        menuIcon.addEventListener('click', () => {
+            sidebar.classList.toggle('active');
+            menuIcon.classList.toggle('active-icon');
+        });
+    </script>
+</body>
+</html>
