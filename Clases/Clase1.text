@@ -43,9 +43,10 @@ x%3 y 5 margarita, 6 y 7 rosa, si se cumplen ambas es violeta
 trabajar en pagina tributo para entrega del primer modulo
 
 GitBash
-git add . (Para agregar todo)
-git status
-git commit -m""
-git push 
-
-ll
+git add . -> (Para agregar todo)
+git status -> Ver que falta por cargar
+git commit -m"" -> Dejar un mensaje al guardar todo
+git push -> Cargar todo al GitHub 
+cd -> "Direccion de la carpeta a la que queremos acceder"
+ls -> para ver lo que hay en la carpeta donde nos encontramos
+clear -> limpiar todo
