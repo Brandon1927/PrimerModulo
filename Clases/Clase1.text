@@ -50,3 +50,12 @@ git push -> Cargar todo al GitHub
 cd -> "Direccion de la carpeta a la que queremos acceder"
 ls -> para ver lo que hay en la carpeta donde nos encontramos
 clear -> limpiar todo
+
+-> Clase 18 de marzo 
+
+Pregunta tipo entrevista
+
+Escribir # del 1 al 100 reemplazando 
+los multiplos de 3 por la palabra "Fizz"
+los multiplos de 5 por la palabra "Buzz"
+los multiplos de 3 y 5 por la palabra "FizzBuzz"
