@@ -35,23 +35,54 @@ body {
     margin: 0 auto 20px auto;
 }
 
-/* Título centrado con el mismo color que definiste */
+/* Título */
 h1 {
     text-align: center;
     font-size: 2.5rem;
     font-weight: bold;
-    color: #d33434; /* Se mantiene el color original */
+    color: #d33434;
     margin: 0 auto;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
-    display: block;
+}
+
+/* Barra de búsqueda */
+#searchBar {
+    position: relative;
+    left: 25%;
+    width: 60%;
+    max-width: 400px;
+    padding: 10px;
+    font-size: 18px;
+    margin: 15px 0;
+    border: 2px solid #d33434;
+    border-radius: 10px;
+    outline: none;
+    text-align: center;
+}
+
+#searchButton {
+    position: relative;
+    left: 25%;
+    padding: 10px 15px;
+    font-size: 18px;
+    color: white;
+    background-color: #d33434;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+#searchButton:hover {
+    background-color: #b02929;
 }
 
 /* Lista de Pokémon */
 .pokemon-list {
-    display: flex; /* Usa flexbox para alinear en fila */
-    flex-wrap: wrap; /* Permite que los elementos bajen si no hay espacio */
-    justify-content: center; /* Centra las tarjetas en la pantalla */
-    gap: 20px; /* Espaciado entre tarjetas */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
 }
 
 /* Tarjeta de Pokémon */
@@ -63,6 +94,7 @@ h1 {
     padding: 10px;
     text-align: center;
     transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
 }
 
 .pokemon-card:hover {
@@ -92,34 +124,47 @@ h1 {
     color: #555;
 }
 
+/* Sección de detalles */
 #pokemonDetail {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    color: #d33434; /* Se mantiene el color original */
 }
 
 .detail-container {
-    background: #faebd7; /* Color similar a la lista */
-    color: #d33434; /* Se mantiene el color original */
-    padding: 20px;
-    border-radius: 15px;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    display: grid;
+    background: #faebd7;
+    color: #d33434;
+    padding: 30px 80px;
+    border: 2px solid #d1a754;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     text-align: center;
-    max-width: 300px;
+    max-width: 200px;
     position: absolute;
-    top: 50%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
+.contenidoCards{
+    position: relative;
+    left: -10%;
+}
+
 .detail-container h2 {
     font-size: 24px;
-    color: #d33434; /* Se mantiene el color original */
+    color: #d33434;
     font-weight: bold;
     margin-bottom: 10px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.ImagenesCard{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
 }
 
 .detail-container img {
@@ -128,12 +173,29 @@ h1 {
     margin: 10px;
 }
 
+/* #frente{
+    position: relative;
+    left: -80%;
+}
+
+#espalda{
+    position: relative;
+    top: -120px;
+    left: 80%;
+}
+
+.TextosCard{
+    position: relative;
+    top: -120px;
+} */
+
 .detail-container p {
     font-size: 18px;
     font-weight: bold;
-    color: #d33434; /* Se mantiene el color original */
+    color: #d33434;
 }
 
+/* Botón de regreso general */
 #btnBack {
     margin-bottom: 10px;
     padding: 5px 15px;
@@ -151,14 +213,74 @@ h1 {
     background: darkred;
 }
 
-@media (width<= 600px){
-    .pokemon-list{
-        grid-template-columns: repeat(1,1fr);
+/* Sección de búsqueda de Pokémon */
+#pokemonSearch1{
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.search-container{
+    background: #faebd7;
+    color: #d33434;
+    padding: 30px;
+    border: 2px solid #d1a754;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 100px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+.search-container:hover{
+    background: #f5dec0;
+}
+
+/* Botón de regreso para la sección de búsqueda */
+#btnBack1 {
+    margin-bottom: 10px;
+    padding: 5px 15px;
+    background: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+#btnBack:hover {
+    background: darkred;
+}
+
+/* Media Queries */
+@media (max-width: 600px) {
+    .pokemon-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #searchBar {
+        width: 80%;
+    }
+
+    #searchButton {
+        width: 80%;
+        margin: 10px 0;
+    }
+
+    .pokemon-Search {
+        height: auto;
     }
 }
 
-@media (600px < width < 900px){
-    .pokemon-list{
-        grid-template-columns: repeat(3,1fr);
+@media (min-width: 601px) and (max-width: 900px) {
+    .pokemon-list {
+        grid-template-columns: repeat(3, 1fr);
     }
 }
