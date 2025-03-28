@@ -1,0 +1,148 @@
+Jueves 27 de marzo
+
+Introducción a Scrum e Historias de Usuario
+
+Aspectos o Pilares del Manifiesto
+
+1. Individuos e interacciones
+2. Software funcionando
+3. Colaboracion con el cliente
+4. Respuesta ante el cambio
+
+Desarrollado para gestionar y desarrollar productos
+
+1. Desarrollar Software
+2. Hardware
+3. Software embebido
+4. Redes de funciones interactivas
+5. Vehiculos autonomos
+6. Escuelas
+7. Gobiernos
+8. Mercadeo
+9. Gestionar la operacion de organizaciones
+
+Scrum requiere un scrum master
+
+1. un product owner ordena el trabajo de un problema complejo en un Product Backlog
+2. el scrum team convierte una seleccion del trabajo en un incremento de valor durante un sprint
+3. El scrum team y sus interesados inspeccionan los resultados y se adaptan para el proximo sprint
+
+Emplea un enfoque iteractivo e incremental para optimizar la previsibilidad y controlar el riesgo
+
+Los 3 Pilares 
+
+1. Transparencia
+2. Inspección
+3. Adaptación
+
+El uso exitodo de Scrum
+
+1. Coraje
+2. Enfoque
+3. Compromiso
+4. Respeto
+5. Apertura
+
+ROLES
+
+Scrum team =>   Un pequeño equipo de personas (Scrum Master, Product owner y Developers).
+                
+                No hay subequipos ni jerarquias.
+                
+                enfocados en un objetivo a la vez, el objetivo del producto.
+                
+                Son autogestionados y cada quien decide quien hace qué. 
+                
+                10 personas maximo, minimo 3.
+                
+                Todo el equipo es responsable de crear un incremento valioso y util en cada Sprint.
+                
+                Developers => Desarrolladores =>    Comprometen a crear cualquier aspecto de un incremento 
+                                                    util(Funcional) en cada sprint.
+
+                Product owner => Propietario del producto => Debe entender y apoyar las necesidades
+                                                    e intereses de todos los stakeholders.
+
+                                                    Mantener la vision de las partes interesadas.
+                                                    
+                                                    Encargado de maximizar el valor del producto.
+                                                    
+                                                    Es una sola persona (lo ideal).
+
+                Scrum master => Guia de Scrum =>    Ayuda a todos a comprender la teoria y la
+                                                    practica de scrum, del scrum team y la 
+                                                    organizacion.
+
+                                                    Es un verdadero lider que sirven al scrum team 
+                                                    y la organizacion en general.
+
+Eventos Scrum
+
+1. Los sprints
+    =>  El espacio de tiempo del trabajo entre 1 y 4 semanas
+
+2. Sprint Planning (Planificacion del sprint)
+    =>  Al inicio de cada Sprint, realiza una reunión de 
+        planificación donde el equipo define qué tareas del Product Backlog 
+        se abordarán durante el Sprint.
+
+        Aborda los siguientes temas =>  1. ¿Por que este sprint es valioso?
+                                        2. ¿Que se puede hacer en este sprint?
+                                        3. ¿Como se realizara este trabajo elegido?
+
+3. Daily scrum (Scrum diario)
+    =>  10 a 15 minutos al inicio del dia.
+
+        ¿Qué hice ayer?, ¿Qué haré hoy?, ¿Hay algo que me impida avanzar?
+
+4. Sprint review (Revisión del sprint)
+    =>  Duracion entre 1.5 y 6 horas.
+
+        Al final de cada Sprint, realiza una Revisión del Sprint para 
+        mostrar al Product Owner y a otros stakeholders el trabajo completado. 
+        Durante esta reunión, se discuten los resultados y se ajusta el Product 
+        Backlog si es necesario
+
+5. Sprint retrospective (Retrospectiva del sprint)
+    =>  Después de la Revisión, realiza una Retrospectiva del Sprint con el equipo. 
+        El objetivo es reflexionar sobre lo que funcionó bien, lo que no, y cómo 
+        mejorar el proceso. Esto es clave para la mejora continua.
+
+Durante el sprint no se realizan cambios que lo pongan en peligro.
+
+Un sprint se puede cancelar si el objetivo del sprint se vuelve obsoleto,
+solo el Produc Owner(PO) tiene la autoridad
+
+Tecnicas para evaluar
+
+El barco de vela (The sailboat)
+Las 4l Technique
+La estrella de mar
+
+Etapas
+
+Preparar
+recolectar
+reflexionar
+decidir
+cerrar
+
+Artefactos de scrum
+
+1. Product Backlog, Objetivo del producto.
+2. Sprint Backlog, Objetivo del Sprint.
+3. El incremento es la definicion de terminado
+
+Time-boxing es una practica critica en scrum y debe aplicarse con cuidado
+
+Historias de Usuario
+
+epica =>    Es una historia de usuario grande que no se puede dividir en mas pequeñas
+
+Herramientas Útiles
+
+JIRA: Para gestión de tareas y seguimiento de Sprints.
+
+Trello: Para mantener un backlog visual y gestionar tareas.
+
+Miro: Para hacer diagramas, mapas de procesos, y retrospectives.
