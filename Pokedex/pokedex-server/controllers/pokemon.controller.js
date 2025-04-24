@@ -1,4 +1,5 @@
 import Pokemon from "../models/pokemon.model.js";
+import fetchPokemon from "../services/fetchPokemon.js";
 
 const hiTrainer = async (req, res)=>{
     try {
@@ -16,22 +17,47 @@ const createPokemon = async (req, res)=>{
     } catch (error) {
         res.status(500).send(`el error es: ${error.message}`);
     }
-}
+};
 
-const delPokemon = async (req, res)=>{
+const getPokemons = async (req, res) =>{
     try {
-        res.status(200).send("Borraste un pokemon");
+        const pokemones = await Pokemon.find();
+        res.status(200).json(pokemones);
     } catch (error) {
-        res.status(404).json(`el error es: ${error.message}`);
+        res.status(500).json(`El error es: ${error.message}`);
     }
-}
+};
 
-const actPokemon = async (req, res)=>{
+const getPokemonById = async (req, res)=>{
     try {
-        res.status(201).send("Actualizaste un pokemon");
+        const pokemonId = req.params.pokemon_id;
+        let pokemon = await Pokemon.findOne({"pokemon_id":pokemonId});
+        if(!pokemon){
+            pokemon={
+                pokemon_id:pokemonId,
+                view:false,
+                catch:false,
+                in_team:false
+            };
+        };
+        const pokemonData = await fetchPokemon(pokemonId,pokemon);
+        if(pokemonData == 404){
+            return res.status(404).json({
+                message: "Pokemon not found",
+                status:404,
+                data: null
+            });
+        };
+        return res.status(200).json({
+            message: "Ok",
+            status:200,
+            data: pokemonData
+        });
     } catch (error) {
         res.status(404).json(`El error es: ${error.message}`);
     }
-}
+};
 
-export default {hiTrainer, createPokemon, delPokemon, actPokemon};
+
+
+export default {hiTrainer, createPokemon, getPokemons, getPokemonById};

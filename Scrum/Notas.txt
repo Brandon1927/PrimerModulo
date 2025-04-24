@@ -137,7 +137,21 @@ Time-boxing es una practica critica en scrum y debe aplicarse con cuidado
 
 Historias de Usuario
 
+Quien lo va usar
+Que es lo que necesita
+para que lo va usar
+
+INVEST =>   Independiente, Negociable, Valuable o de valor, 
+            Estimable, Sucinta o pequeña, Comprobable
+
 epica =>    Es una historia de usuario grande que no se puede dividir en mas pequeñas
+
+Task boards
+
+Fila 1 => Stories
+Fila 2 => Not Started
+Fila 3 => In progress
+Fila 4 => Done
 
 Herramientas Útiles
 
@@ -146,3 +160,11 @@ JIRA: Para gestión de tareas y seguimiento de Sprints.
 Trello: Para mantener un backlog visual y gestionar tareas.
 
 Miro: Para hacer diagramas, mapas de procesos, y retrospectives.
+
+Caracteristicas modelo SMART
+
+S => Specific
+M => Medible
+A => Achievable
+R => Relevant
+T => Timely
